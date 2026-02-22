@@ -29,7 +29,7 @@ while ((c = fgetc(your_abomination)) != EOF) {
 	result = 1;
       } else if (strcmp(instruction, "May_you_please_increment_the_value_of_the_current_cell_by_one") == 0) {
         result = 2;
-      } else if (strcmp(instruction, "May_you_please_decrement_the_value_of_the_current_cell") == 0) {
+      } else if (strcmp(instruction, "May_you_please_decrement_the_value_of_the_current_cell_by_one") == 0) {
 	result = 11;
       } else if (strcmp(instruction, "May_you_please_begin_a_loop") == 0) {
 	result = 3;
@@ -47,7 +47,7 @@ while ((c = fgetc(your_abomination)) != EOF) {
 	result = 9;
       } else if (strcmp(instruction, "May_you_please_jump_to_the_last_function_starting_from_here") == 0) {
 	result = 10;
-      } else if (strcmp(instruction, "May_you_please_interrupt_the_process_and_read_the_provided_input") == 0) {
+      } else if (strcmp(instruction, "May_you_please_ask_the_guy_in_front_of_the_screen_for_a_value") == 0) {
 	result = 12;
       } else {
 	printf("There is an error in your code, I don't know where \n");
