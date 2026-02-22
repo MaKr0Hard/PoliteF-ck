@@ -12,6 +12,7 @@ Compiling the sources (which if you dont know "src" stands for "source") :
 Using it :
 - ./trans <your_file's_name> <name_of_bytecode_file>   //to build bytecode file
 - ./exec <name_of_bytecode_file>   //to execute the bytecode file
+- You can test with the provided test.fak file that should output R
 
 The commands (I think you will understand them all) :
 |   WF   |   PoliteF\*ck                                                                                                                       |
@@ -30,3 +31,5 @@ The commands (I think you will understand them all) :
 |   ,    | May_you_please_ask_the_guy_in_front_of_the_screen_for_a_value                                                                       |
 
 Oh, and don't forget the semicolon after every instruction.
+
+If there is a problem with the exec file, you may ask Wilrak0v for changes
