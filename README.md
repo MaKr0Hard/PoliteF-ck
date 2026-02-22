@@ -12,7 +12,7 @@ Compiling the sources (which if you dont know "src" stands for "source") :
 Using it :
 - ./trans <your_file's_name> <name_of_bytecode_file>   //to build bytecode file
 - ./exec <name_of_bytecode_file>   //to execute the bytecode file
-- You can test with the provided test.fak file that should output R
+- You can test with the provided test.fak file that should output "h"
 
 The commands (I think you will understand them all) :
 |   WF   |   PoliteF\*ck                                                                                                                       |
