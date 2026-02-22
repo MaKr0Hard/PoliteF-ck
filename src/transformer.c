@@ -36,9 +36,9 @@ while ((c = fgetc(your_abomination)) != EOF) {
       } else if (strcmp(instruction, "May_you_please_end_the_current_loop") == 0) {
 	result = 4;
       } else if (strcmp(instruction, "May_you_please_move_the_pointer_by_one_position_to_what_the_original_developper_of_this_programming_language_calls_the_right") == 0) {
-	result = 5;
-      } else if (strcmp(instruction, "May_you_please_move_the_pointer_by_one_position_to_what_the_original_developper_of_this_programming_language_calls_the_left") == 0) {
 	result = 6;
+      } else if (strcmp(instruction, "May_you_please_move_the_pointer_by_one_position_to_what_the_original_developper_of_this_programming_language_calls_the_left") == 0) {
+	result = 5;
       } else if (strcmp(instruction, "May_you_please_begin_a_function") == 0) {
 	result = 7;
       } else if (strcmp(instruction, "May_you_please_end_the_current_function") == 0) {
