@@ -5,7 +5,7 @@ Wilrak0v's wilf\*ck but less wil and more f\*ck
 - All the commands are explicit 
 - It can be run with Wilrak0v's execution file
 
-Compiling the sources :
+Compiling the sources (which if you dont know "src" stands for "source") :
 - clang or gcc exe.c -o exec
 - clang or gcc transformer.c -o trans
 
