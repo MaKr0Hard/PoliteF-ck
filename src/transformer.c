@@ -57,13 +57,15 @@ while ((c = fgetc(your_abomination)) != EOF) {
   } else {
     
       if ((c != '\n') && (c != ' ')) {
-      addChar(instruction, c); //see tools.h
+      if(addChar(instruction, c)) {
+            printf("Your instructions are too damn big for the char[512], be more delicate\n");
+      } //see tools.h
       }
       save_it_or_not = 0;
 
   }
 
-  if (save_it_or_not == 1) {
+  if (save_it_or_not) { //it is just using the int as a boolean
     fwrite(&result, sizeof(result), 1, the_computers_abomination);
     fflush(the_computers_abomination);
   }
@@ -73,7 +75,18 @@ while ((c = fgetc(your_abomination)) != EOF) {
 }
 
 int main(int argc, char* argv[]) {
-  if (argc < 3 ) return 1;
+  if (argc < 3 ) {
+        if (argc == 1) {
+              logo(); //see tools.h
+      } else {
+       printf("ERROR : You may have forgotten something in your request\n");
+       return 1;
+      }
+  } else if (argc > 3) {
+        printf("ERROR : I got the arguments, wait, too many, TOO MANY ARGUMENTS !!!\n");
+        return 1;
+} else {
   convert_instructions_to_binary(argv[1], argv[2]);
   return 0;
+}
 }
