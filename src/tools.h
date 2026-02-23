@@ -9,10 +9,6 @@ void addChar(char *s, char c) {
 }
 
 void wipeString(char *str) {
-  int i = 0;
-  while (str[i]) {
-    str[i] = ' ';
-    i++;
-  }
+  
 str[0] = '\0';
 }
