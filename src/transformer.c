@@ -31,9 +31,9 @@ while ((c = fgetc(your_abomination)) != EOF) {
         result = 2;
       } else if (strcmp(instruction, "May_you_please_decrement_the_value_of_the_current_cell_by_one") == 0) {
 	result = 11;
-      } else if (strcmp(instruction, "May_you_please_begin_a_loop") == 0) {
+      } else if (strcmp(instruction, "May_you_please_begin_a_loop_and_stop_it_and_stop_it_only_if_the_value_stored_in_the_cell_where_it_started_is_zero") == 0) {
 	result = 3;
-      } else if (strcmp(instruction, "May_you_please_end_the_current_loop") == 0) {
+      } else if (strcmp(instruction, "May_you_please_end_the_current_loop_which_will_stop_only_if_the_value_stored_in_the_cell_where_it_started_is_zero") == 0) {
 	result = 4;
       } else if (strcmp(instruction, "May_you_please_move_the_pointer_by_one_position_to_what_the_original_developper_of_this_programming_language_calls_the_right") == 0) {
 	result = 6;
