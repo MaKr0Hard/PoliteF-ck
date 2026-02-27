@@ -25,7 +25,7 @@ while ((c = fgetc(your_abomination)) != EOF) {
 
   if (c == ';') {
 
-      if (strcmp(instruction, "May_you_please_show_the_value_of_the_current_cell") == 0) {
+      if (strcmp(instruction, "May_you_please_show_the_ASCII_value_of_the_current_cell") == 0) {
 	result = 1;
       } else if (strcmp(instruction, "May_you_please_increment_the_value_of_the_current_cell_by_one") == 0) {
         result = 2;
