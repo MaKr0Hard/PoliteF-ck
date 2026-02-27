@@ -27,7 +27,7 @@ The commands (I think you will understand them all) :
 |   }    | May_you_please_end_the_current_function                                                                                             |
 |   ^    | May_you_please_jump_to_the_last_function_starting_from_here                                                                         |
 |   @    | May_you_please_call_the_corresponding_syscall_of_the_current_cell                                                                   |
-|   .    | May_you_please_show_the_value_of_the_current_cell                                                                                   |
+|   .    | May_you_please_show_the_ASCII_value_of_the_current_cell                                                                                   |
 |   ,    | May_you_please_ask_the_guy_in_front_of_the_screen_for_a_value                                                                       |
 
 Oh, and don't forget the semicolon after every instruction.
