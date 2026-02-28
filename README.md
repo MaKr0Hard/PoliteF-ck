@@ -21,7 +21,7 @@ The commands (I think you will understand them all) :
 |   >    | May_you_please_move_the_pointer_by_one_position_to_what_the_original_developper_of_this_programming_language_calls_the_right        |
 |   +    | May_you_please_increment_the_value_of_the_current_cell_by_one                                                                       |
 |   -    | May_you_please_decrement_the_value_of_the_current_cell_by_one                                                                       |
-|   [    | May_you_please_begin_a_loop_and_stop_it_and_stop_it_only_if_the_value_stored_in_the_cell_where_it_started_is_zero                   |
+|   [    | May_you_please_begin_a_loop_and_stop_it_only_if_the_value_stored_in_the_cell_where_it_started_is_zero                   |
 |   ]    | May_you_please_end_the_current_loop_which_will_stop_only_if_the_value_stored_in_the_cell_where_it_started_is_zero                   |
 |   {    | May_you_please_begin_a_function                                                                                                     |
 |   }    | May_you_please_end_the_current_function                                                                                             |
