@@ -6,12 +6,12 @@
 void convert_instructions_to_binary(const char *your_abominations_name, const char *name_of_the_computers_abomination) {
   FILE *your_abomination = fopen(your_abominations_name, "r"); //opens your abomination
   if (!your_abomination) {
-    printf("Could not open the requested input file.\n"); //gives you ***EMOTIONAL DAMAGE*** if error
+    printf("\033[31mCould not open the requested input file.\033[0m\n"); //gives you ***EMOTIONAL DAMAGE*** if error
     return;
   }
   FILE *the_computers_abomination = fopen(name_of_the_computers_abomination, "wb"); //opens your computer's abomination
   if (!the_computers_abomination) {
-    printf("Could not open the requested output file. Are you running that on a 70's computer ?!\n "); //see comment on line 9
+    printf("\033[31mCould not open the requested output file. Are you running that on a 70's computer ?!\033[0m\n "); //see comment on line 9
     fclose(your_abomination);
     return;
   }
@@ -50,7 +50,7 @@ while ((c = fgetc(your_abomination)) != EOF) {
       } else if (strcmp(instruction, "May_you_please_ask_the_guy_in_front_of_the_screen_for_a_value") == 0) {
 	result = 12;
       } else {
-	printf("There is an error in your code, I don't know where \n");
+	printf("\033[33mThere is an error in your code, I don't know where \033[0m\n");
 	save_it_or_not = 0;
       }
       wipeString(instruction); //see tools.h
@@ -58,7 +58,7 @@ while ((c = fgetc(your_abomination)) != EOF) {
     
       if ((c != '\n') && (c != ' ')) {
       if(addChar(instruction, c)) {
-            printf("Your instructions are too damn big for the char[512], be more delicate\n");
+            printf("\033[31mYour instructions are too damn big for the char[512], be more delicate\033[0m\n");
       } //see tools.h
       }
       save_it_or_not = 0;
@@ -79,11 +79,11 @@ int main(int argc, char* argv[]) {
         if (argc == 1) {
               logo(); //see tools.h
       } else {
-       printf("ERROR : You may have forgotten something in your request\n");
+       printf("\033[31mERROR : You may have forgotten something in your request\033[0m\n");
        return 1;
       }
   } else if (argc > 3) {
-        printf("ERROR : I got the arguments, wait, too many, TOO MANY ARGUMENTS !!!\n");
+        printf("\033[31mERROR : I got the arguments, wait, too many, TOO MANY ARGUMENTS !!!\033[0m\n");
         return 1;
 } else {
   convert_instructions_to_binary(argv[1], argv[2]);
