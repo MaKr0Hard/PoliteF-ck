@@ -11,7 +11,7 @@ void convert_instructions_to_binary(const char *your_abominations_name, const ch
   }
   FILE *the_computers_abomination = fopen(name_of_the_computers_abomination, "wb"); //opens your computer's abomination
   if (!the_computers_abomination) {
-    printf("Could not open the requested output file.\n "); //see comment on line 9
+    printf("Could not open the requested output file. Are you running that on a 70's computer ?!\n "); //see comment on line 9
     fclose(your_abomination);
     return;
   }
