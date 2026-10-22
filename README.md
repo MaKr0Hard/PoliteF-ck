@@ -4,10 +4,12 @@ Wilrak0v's WilF\*ck but less Wil and more F\*ck
 - Learn this and brainf*ck will feel like nothing
 - All the commands are explicit 
 - It can be run with Wilrak0v's execution file
+**AND SOON** ***STACKI !!!***
 
 Compiling the sources (which if you dont know "src" stands for "source") :
 - clang or gcc exe.c -o exec
 - clang or gcc transformer.c -o trans
+**NEW** : Compile using the Makfile
 
 Using it :
 - ./trans <your_file's_name> <name_of_bytecode_file>   //to build bytecode file
